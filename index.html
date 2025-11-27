@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JaCafe</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav id="navbar">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <svg
+            class="coffee-icon"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+            <line x1="6" y1="1" x2="6" y2="4"></line>
+            <line x1="10" y1="1" x2="10" y2="4"></line>
+            <line x1="14" y1="1" x2="14" y2="4"></line>
+          </svg>
+          <span class="brand-text">JaCafe</span>
+        </div>
+
+        <div class="nav-links">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#menu" class="nav-link">Menu</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+
+        <div class="nav-actions">
+          <button id="cartBtn" class="cart-btn">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path
+                d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+              ></path>
+            </svg>
+            <span id="cartCount" class="cart-count">0</span>
+          </button>
+
+          <button id="mobileMenuBtn" class="mobile-menu-btn">
+            <svg
+              id="menuIcon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+      </div>
+      <div class="hero-content">
+        <h1 class="hero-title">JaCafe</h1>
+        <p class="hero-subtitle">Berikan Anda Pengalaman Yang Baru</p>
+        <a href="#menu" class="hero-btn">Lihat Menu</a>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+      <div class="container">
+        <h2 class="section-title">Menu Kami</h2>
+
+        <div class="menu-category">
+          <h3 class="category-title">Hot Coffee</h3>
+          <div class="menu-grid" id="hotCoffeeGrid"></div>
+        </div>
+
+        <div class="menu-category">
+          <h3 class="category-title">Cold Coffee</h3>
+          <div class="menu-grid" id="coldCoffeeGrid"></div>
+        </div>
+
+        <div class="menu-category">
+          <h3 class="category-title">Specialty</h3>
+          <div class="menu-grid" id="specialtyGrid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content">
+            <h2 class="section-title">Tentang Kami</h2>
+            <p class="about-text">
+              JaCafe adalah tempat sempurna bagi pecinta kopi yang menghargai
+              kualitas dan keanggunan. Kami menyajikan kopi premium dengan
+              atmosfer yang tenang dan sophisticated.
+            </p>
+            <p class="about-text">
+              Setiap biji kopi dipilih dengan teliti dan diseduh oleh barista
+              berpengalaman untuk menghadirkan pengalaman kopi terbaik untuk
+              Anda.
+            </p>
+          </div>
+          <div class="about-info">
+            <div class="info-item">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <div>
+                <h4>Jam Buka</h4>
+                <p>Senin - Jumat: 07:00 - 22:00</p>
+                <p>Sabtu - Minggu: 08:00 - 23:00</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <div>
+                <h4>Lokasi</h4>
+                <p>Jl.xxxx xxxxxx</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                ></path>
+              </svg>
+              <div>
+                <h4>Kontak</h4>
+                <p>+62 xxxx xxx xxxx</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container-small">
+        <h2 class="section-title">Hubungi Kami</h2>
+        <p class="contact-subtitle">Ada pertanyaan? Kami siap membantu Anda</p>
+        <div class="contact-form-container">
+          <div class="contact-form">
+            <input
+              type="text"
+              id="nameInput"
+              placeholder="Nama"
+              class="form-input"
+            />
+            <input
+              type="email"
+              id="emailInput"
+              placeholder="Email"
+              class="form-input"
+            />
+            <textarea
+              id="messageInput"
+              placeholder="Pesan"
+              rows="4"
+              class="form-input"
+            ></textarea>
+            <button id="submitBtn" class="submit-btn">Kirim Pesan</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cart Sidebar -->
+    <div id="cartSidebar" class="cart-sidebar">
+      <div class="cart-header">
+        <h3>Keranjang</h3>
+        <button id="closeCartBtn" class="close-btn">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div id="cartItems" class="cart-items"></div>
+      <div id="cartFooter" class="cart-footer">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span id="totalPrice" class="total-price">Rp 0</span>
+        </div>
+        <button id="checkoutBtn" class="checkout-btn">Checkout</button>
+      </div>
+    </div>
+
+    <!-- Overlay -->
+    <div id="overlay" class="overlay"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p></p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
